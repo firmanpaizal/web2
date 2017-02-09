@@ -1,0 +1,78 @@
+body
+{	background: #FFCC00;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal; 
+	word-wrap:break-word;
+	}
+.container{
+ 	max-width: inherit;
+ 	margin: auto;
+ 	background: #FF9900;
+ 	overflow: auto;
+ 	padding: inherit; }
+.header{
+ 	background-color:#FF3300;
+ 	padding: 10px;
+ 	margin: 10px; }
+/* bagian main */
+.isi{
+  	width: 700px;
+  	padding: 10px;
+  	margin: 10px;
+  	float: left; }
+.isi img{
+   	max-width: 50%;
+   	height: auto; }
+.isi a{
+   	font-weight: bold; }
+.menu_kiri{
+  	width: 250px;
+  	padding: 10px;
+  	margin: 10px;
+  	float: left; }
+.footer{
+	clear: both;
+	color: #FFFFFF;
+	padding: 5px;
+	margin: 5px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	text-decoration: overline;
+	background-color: #FF8000;
+}
+
+/*Resolusi yang tekah disetting*/
+/* 1080px kebawah */
+@media screen and (max-width: 1080px) {
+.container {
+  	width: 100%; }
+.header {
+  	width: 25%; }
+.menu_kiri {
+  	width: 15%; }
+.isi {
+	width: 60%; } 
+.footer {
+  clear: both;
+  padding: 1% 4%;
+  width: auto;
+  float: none; }
+}
+/*700px kebawah */
+@media screen and (max-width: 780px) {
+.header, 
+.footer{
+  text-align: center; }
+.menu_kiri {
+  width: auto;
+  float: none; }
+.isi {
+  width: auto;
+  float: none;
+}
+.footer{
+  width: auto;
+  float: none;
+}
+}
